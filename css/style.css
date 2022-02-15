@@ -7,22 +7,23 @@ body{
     font-family: "Font Awesome 5 Free";
     font-family: 'Gotham', sans-serif;
     font-family: 'Gotham Thin', sans-serif;
+    background: #444444;
 
 }
 
-header{
-    position: relative;
+#header{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
     height: 50px;
-    background-color: rgba(0,0,0, 0.6);
+    width: 100%;
     z-index: 1;
+    background-color: rgba(0,0,0, 0.6);
 }
 
-.button-header{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
+.button{
     padding: 5px 20px;
+    margin: 10px;
     border-radius: 20px;
     font-size: 14px;
     border:2px solid white;
@@ -35,3 +36,30 @@ header{
     color: white;
 }
 /*/HEADER*/
+.container-nav{
+    padding: 15px;
+    
+
+}
+.nav-left{
+    width: 20%;
+    display: flex;
+    overflow-y: hidden;
+    background-color: black;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.container-nav{
+    z-index: 2;
+}
+nav{
+    color: white;
+    margin-top: 30px;
+    
+}
+nav ul{
+    list-style-type: none;
+}
