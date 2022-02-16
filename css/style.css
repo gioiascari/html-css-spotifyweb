@@ -34,7 +34,7 @@ a{
 }
 main {
     padding: 50px 0px ;
-    margin-left: 160px;
+    margin-left: 200px;
     font-size: 28px;
 }
 
@@ -66,6 +66,12 @@ main {
 .button-header a{
     text-decoration: none;
     color: white;
+    
+}
+.button:hover{
+    transform: scale(1.2);
+    
+
 }
 /*/HEADER*/
 .logo img{
@@ -75,7 +81,7 @@ main {
 
 .nav-left{
     height: 100%;
-    width: 160px;
+    width: 200px;
     position: fixed;
     background-color: #111;
     overflow-x: hidden;
@@ -97,6 +103,15 @@ li img{
     width: 25px;
     margin-top: 5px;
 }
+.list a:hover{
+    color: white;
+}
+.list img{
+    color: gray;
+}
+.list img:hover{
+    color: white;
+}
  
 
 
@@ -105,6 +120,7 @@ li img{
 
 .playlist{
     margin-top: 15px;
+    
 }
 .playlist nav{
     margin: 0px;
@@ -170,29 +186,41 @@ h2{
 /*/ USER FOOTER*/
 /* MAIN*/
 .main-nav{
+    margin-top: 30px;
+
+}
+
+.top-nav ul{
+    display:flex ;
+    justify-content: space-around;
+}
+.top-nav li{
+    margin: 0px 10px;
+}
+.top-nav{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2.5rem;
+
 }
-.main-nav ul{
-    display:flex ;
-}
-.main-nav li{
-    
-    margin: 0px 10px;
+.top-nav li a:hover{
+    color: white;
 }
 
 
 /*PLAYED*/
 .played{
     margin-top: 30px;
+    display: flex;
+
 }
 
 .box-played{
     width: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .text-title h2{
     font-size: 20px;
@@ -221,8 +249,11 @@ h2{
     text-align: center;
 }
 .item img{
+    max-width: 100%;
     width: 150px;
-    height: 150px;
+}
+.item a img:hover{
+    
 }
 .text-bottom p{
     font-size: 10px;
