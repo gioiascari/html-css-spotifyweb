@@ -21,9 +21,10 @@ a{
     text-decoration: none;
 }
 .fa, 
-.fas{
+.fas, .far,
+.fal{
     color: white;
-    font-weight: 900;
+    /*font-weight: 900;*/
     font-family: "Font Awesome 5 Free";
     margin: 5px
 }
@@ -120,7 +121,7 @@ h2{
 }
 
 /* / BARRA DI NAVIGAZIONE "CREA NUOVA PLAYLIST"*/
-/* USER*/
+/* USER FOOTER*/
 .footer-nav{
     display: flex;
     justify-content: flex-end;
@@ -154,16 +155,25 @@ h2{
 .user{
     border: 0px;
 }
-/*/ USER*/
+/*/ USER FOOTER*/
 
 /*FOOTER*/
 footer{
     height: 50px;
     background-color: rgb(29, 29, 29);
     display: flex;
-} .left-footer{
+    
+} 
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left-footer{
     margin: 5px;
     font-size: 12px;
+    display: flex;
+    align-items: center;
     
 }
 .left-footer img{
@@ -181,3 +191,40 @@ footer a{
     text-decoration: none;
     color: gray;
 }
+.central-footer{
+    width: 40%;
+    text-align: center;
+    
+}
+.icon{
+    display: flex;
+}
+.like{
+    margin: 0px 10px;
+}
+.play i{
+    margin: 5px 10px;
+}
+.play {
+    position: relative;
+    border-bottom: 2px solid white;
+}
+
+.audio-pointer{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 22px;
+    left: 80px;
+}
+.right-footer{
+    display: flex;
+}
+ .play-right{
+     align-items: center;
+     display: flex;
+ }
+
+ /* /FOOTER*/
