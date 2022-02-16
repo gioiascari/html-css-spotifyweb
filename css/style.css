@@ -32,6 +32,11 @@ a{
 .container-nav{
     padding: 15px;
 }
+main {
+    padding: 50px 0px ;
+    margin-left: 160px;
+    font-size: 28px;
+}
 
 /* /UTILITIES*/
 #header{
@@ -40,7 +45,7 @@ a{
     justify-content: flex-end;
     height: 50px;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
     background-color: rgba(0,0,0, 0.6);
 }
 
@@ -65,11 +70,12 @@ a{
 /*PRIMI TRE LINK SOTTO AL LOGO*/
 
 .nav-left{
-    width: 15%;
-    display: flex;
-    overflow-y: hidden;
-    background-color: black;
-    height: 100vh;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
     z-index: 2;
 }
 
@@ -121,6 +127,8 @@ h2{
 }
 
 /* / BARRA DI NAVIGAZIONE "CREA NUOVA PLAYLIST"*/
+
+
 /* USER FOOTER*/
 .footer-nav{
     display: flex;
@@ -162,6 +170,11 @@ footer{
     height: 50px;
     background-color: rgb(29, 29, 29);
     display: flex;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     
 } 
 .footer-container{
