@@ -89,7 +89,7 @@ nav{
     
 }
 li a{
-    color: white;
+    color: gray;
     margin-bottom:2px;
     vertical-align: middle;
 }
@@ -173,18 +173,25 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2.5rem;
+}
+.main-nav ul{
+    display:flex ;
+}
+.main-nav li{
+    
+    margin: 0px 10px;
 }
 
-.main-nav ul{
-    display: flex;
-}
 
 /*PLAYED*/
+.played{
+    margin-top: 30px;
+}
 
 .box-played{
     width: auto;
     display: flex;
-    border: 2px solid red;
     flex-wrap: wrap;
 }
 .text-title h2{
@@ -197,7 +204,7 @@ h2{
     font-size: 14px;
 }
 .song, .text-title{
-    margin: 5px;
+    margin: 15px;
     line-height: 1.5rem;
 }
 .text-title p{
@@ -207,6 +214,7 @@ h2{
     border-radius: 50%;
 }
 .item{
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,12 +224,18 @@ h2{
     width: 150px;
     height: 150px;
 }
+.text-bottom p{
+    font-size: 10px;
+}
 .text-bottom{
     color: gray;
 }
 .text-bottom a{
     text-decoration: none;
     color: white;
+    line-height: 1rem;
+    font-weight: 800;
+    margin-top: 10px;
 }
 /*/PLAYED*/
 
