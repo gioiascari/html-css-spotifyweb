@@ -3,12 +3,10 @@
     .song{
         width: 40%;
     }
-    .box-played{
-
+    .playlist{
+        overflow-y:scroll
     }
-    .logob{
-        display: none;
-    }
+    
 
 
 
@@ -28,13 +26,7 @@
     .logo{
         display: none;
     }
-    img.logoa{
-        display: block;
-        margin: 0;
-    }
-    .img.logob{
-        display: none;
-    }
+    
     
     
     
