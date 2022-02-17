@@ -1,31 +1,36 @@
-@media screen (max-width:768px){
-    
-}
-@media screen and (max-width:420px) {
-    body{
-        background-color: red;
-    }
-    .nav-left{
-        width: 10%;
-        height: auto;
-    }
-    .container-nav{
-        bottom: 0;
-		width: 100vw;
-		height: 5rem;
-		align-items: flex-start;
-		padding-top: 0.4rem;
-    }
-    .list{
-        
-		flex-direction: row;
-		margin-top: 0;
-		align-items: flex-start;
-    }
-    .list nav{
-        width: 100%;
+@media screen and (max-width:760px) {
+
+    .song{
+        width: 40%;
     }
     .box-played{
-       display: flex;
+
     }
+
+
+
+    
+}
+@media screen and (max-width:520px) {
+    
+    main{
+        margin:0px 50px
+    }
+    
+   .side-bar{
+        position: fixed;
+        width: 50px;
+        height: 100%;
+        background: #042331;
+    }
+    
+    .side-bar .,
+    .side-bar .list a{
+        display: none;
+    }
+    
+   
+    
+    
+    
 }
