@@ -6,6 +6,9 @@
     .box-played{
 
     }
+    .logob{
+        display: none;
+    }
 
 
 
@@ -17,17 +20,23 @@
         margin:0px 50px
     }
     
-   .side-bar{
-        position: fixed;
+    .nav-left{
         width: 50px;
-        height: 100%;
-        background: #042331;
     }
-    
-    .side-bar .,
-    .side-bar .list a{
+    .side-bar p, 
+    .side-bar .playlist,
+    .logo{
         display: none;
     }
+    img.logoa{
+        display: block;
+        margin: 0;
+    }
+    .img.logob{
+        display: none;
+    }
+    
+    
     
    
     

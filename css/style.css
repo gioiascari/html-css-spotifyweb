@@ -3,6 +3,9 @@
     margin: 0px;
     padding: 0px;
 }
+.logob{
+    display: none;
+}
 body{
 
     font-family: 'Gotham', sans-serif;
@@ -31,12 +34,14 @@ a{
 
 .container-nav{
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
 }
-main {
-    padding: 50px 0px ;
-    margin-left: 200px;
-    font-size: 28px;
+    
 }
+
 
 .text p{
     color: gray;
@@ -75,18 +80,28 @@ main {
 }
 /*/HEADER*/
 .logo img{
-    width: 50%;
+    width: 100px;
+    
 }
 /*PRIMI TRE LINK SOTTO AL LOGO*/
 
-.nav-left{
+.nav-left{/*
     height: 100%;
     width: 200px;
     position: fixed;
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
+    z-index: 2;*/
+    width: 200px;
+    height: 100%;
+    background-color: #111;
+    display: flex;
+    position: fixed;
     z-index: 2;
+    bottom: 0;
+    left: 0;
+    
 }
 
 nav{
@@ -151,11 +166,7 @@ h2{
 
 /* USER FOOTER*/
 .footer-nav{
-    display: flex;
-    justify-content: flex-end;
     height: 130px;
-    align-items: flex-end;
-    flex-direction: column;
 }
 .download{
     display: flex;
@@ -185,6 +196,11 @@ h2{
 }
 /*/ USER FOOTER*/
 /* MAIN*/
+main{
+    margin-left: 200px;
+    padding: 30px 0px;
+    height: 100vh;
+}
 .main-nav{
     margin-top: 30px;
 
@@ -192,6 +208,7 @@ h2{
 
 .top-nav ul{
     display:flex ;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .top-nav li{
@@ -214,13 +231,16 @@ h2{
 .played{
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 
 }
 
 .box-played{
-    width: auto;
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .text-title h2{
     font-size: 20px;
@@ -235,6 +255,9 @@ h2{
     margin: 15px;
     line-height: 1.5rem;
 }
+.song{
+    width: calc(100% / 7);
+}
 .text-title p{
     color: gray;
 }
@@ -242,19 +265,15 @@ h2{
     border-radius: 50%;
 }
 .item{
-    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 .item img{
-    max-width: 100%;
-    width: 150px;
+    width: 100%;
 }
-.item a img:hover{
-    
-}
+
 .text-bottom p{
     font-size: 10px;
 }
@@ -326,6 +345,9 @@ footer a{
 .play {
     position: relative;
     border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .audio-pointer{
